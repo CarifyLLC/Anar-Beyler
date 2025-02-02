@@ -503,13 +503,13 @@
 
 		// Fetch KRW/USD rate
         	const rawExchangeRate = data.conversion_rates.KRW;
-        	const adjustedExchangeRate = rawExchangeRate - 15; // Subtract 12 KRW for calculations
+        	const adjustedExchangeRate = rawExchangeRate - 10; // Subtract 12 KRW for calculations
 
         	// Calculate adjusted base price in USD
         	const adjustedBasePriceUSD = adjustedBasePrice / adjustedExchangeRate;
 
 
-                const feeUnder20k = 0.02;
+                const feeUnder20k = 0.025;
                 const feeOver20k = 0.03;
                 const adjustmentUnder20k = 350;
                 const adjustmentOver20k = 150;
